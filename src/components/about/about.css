@@ -1,0 +1,281 @@
+.main{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+}
+.heros{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.heros .img{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 320px;
+    background-image: url('../../assets/about/mobile/image-about-hero.jpg');
+    background-repeat: no-repeat;
+}
+.heros .hero-mesg{
+    position: relative;
+    width: 100%;
+    height: 395px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7816B;
+    background-image: url('../../assets/about/mobile/bg-pattern-hero-about-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 22%;
+}
+.hero-mesg .text{
+    position: relative;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+.hero-mesg .text h1{
+    margin-bottom: 18px;
+}
+.talent, .deal{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf3f0;
+    margin-bottom: 7em;
+}
+.talent .talent-img , .deal .deal-img{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../assets/about/talented_dev.jpg');
+    background-repeat: no-repeat;
+}
+.deal .deal-img{
+    background-image: url('../../assets/about/dealSign.jpg');
+}
+.talent .talent-mesg, .deal .deal-mesg{
+    position: relative;
+    margin: 0;
+    height: 545px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/shared/desktop/bg-pattern-three-circles.svg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.talent-mesg .text, .deal-mesg .text{
+    position: relative;
+    width: 94.5%;
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #333136;
+}
+.talent-mesg .text h2, .deal-mesg .text h2{
+    color: #E7816B;
+}
+.locations{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 1230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8em;
+}
+.locations .location{
+    position: relative;
+    margin: 0;
+    height: 364px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ .location .location-img {
+  position: relative;
+  width: 202px; 
+  height: 202px;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.location .location-img::before {
+  position: absolute;
+  content: '';
+  width: 202px;
+  height: 202px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.location .location-img img {
+  max-width: 300px;  
+  max-height: 200px;
+  object-fit: contain; 
+}
+
+.location .one::before{
+    background: linear-gradient(180deg, rgba(93, 2, 2, 0.117569) 0%, rgba(93, 2, 2, 0.0001) 100%);
+}
+.location .two::before{
+    background: linear-gradient(180deg, rgba(93, 2, 2, 0.117569) 0%, rgba(93, 2, 2, 0.0001) 100%);
+}
+.location .three::before{
+    background: linear-gradient(180deg, rgba(93, 2, 2, 0.117569) 0%, rgba(93, 2, 2, 0.0001) 100%);
+}
+.location .text{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.location .text h3{
+    text-transform: uppercase;
+    color: #333136;
+}
+
+@media screen and (min-width: 425px) {
+    .heros .img{
+        background-image: url('../../assets/about/tablet/image-about-hero.jpg');
+        background-size: cover;
+    }
+    .hero-mesg .text{
+        width: 80%;
+    }
+    .talent .talent-img{
+        background-image: url('../../assets/about/talented_dev.jpg');
+        background-size: cover;
+    }
+    .talent-mesg .text, .deal-mesg .text{
+        position: relative;
+        width: 84.5%;}
+    .deal .deal-img{
+        background-image: url('../../assets/about/dealSign.jpg');
+        background-size: cover;
+    }
+}
+
+
+@media screen and (min-width: 48em) {
+    .main{
+        padding: 0 1.5em;
+        margin-top: 100px;
+    }
+    .heros {
+        border-radius: 15px;
+        color: #E7816B;
+        margin-bottom: 7em;
+    }
+    .heros .hero-mesg{
+        height: 312px;
+        background-image: url('../../assets/about/desktop/bg-pattern-hero-about-desktop.svg');
+        background-position: -40% 140%;
+    }
+    .hero-mesg .text{
+        width: 573px;
+        height: 184px;
+    }
+    .talent, .deal{
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .talent .talent-mesg, .deal .deal-mesg{
+        height: 416px;
+        background-position: 100% 100%;
+    }
+    .talent-mesg .text, .deal-mesg .text{
+        width: 582px;
+        height: 280px;
+    } 
+}
+@media screen and (min-width: 51.2em) {
+    .main{
+        padding: 0;
+    }
+}
+@media screen and (min-width: 75em) {
+    .heros{
+        display: grid;
+        width: 100%;
+        grid-template-columns:635px calc(100% - 635px);
+    }
+    .heros .hero-mesg{
+        width: 635px;
+        height: 480px;
+        background-position:100% 100%;
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    .hero-mesg .text{
+        width: 474px;
+        height: 236px;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .heros .img{
+        height: 480px;
+        width: 477px;
+        grid-column: 2 / 3;
+        grid-row: 1;
+        background-image: url('../../assets/about/desktop/image-about-hero.jpg');
+
+    }
+    .talent{
+        display: flex;
+    }
+    .deal{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .talent .talent-img{
+        background-image: url('../../assets/about/talented_dev.jpg');
+        width: 476px;
+        height: 640px;
+    }
+    .deal .deal-img{
+        width: 476px;
+        height: 640px;
+        background-image: url('../../assets/about/dealSign.jpg');
+    }
+    .talent .talent-mesg, .deal .deal-mesg{
+        width: 634px;
+        height: 640px;
+        background-image: url('../../assets/shared/desktop/bg-pattern-two-circles.svg');
+        background-position: -280% 100%;
+    }
+    .talent-mesg .text, .deal-mesg .text{
+        width: 465px;
+        height: 332px;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .locations{
+        height: 364px;
+        flex-direction: row;
+    }
+}

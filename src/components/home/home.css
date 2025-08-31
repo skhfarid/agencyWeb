@@ -1,0 +1,334 @@
+main{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 843px;
+    margin-top: 40px;
+    padding: 0 1px;
+    background-color: #E7816B;
+    background-image: url('../../assets/home/desktop/bg-pattern-hero-home.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+    background-size: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero .mesg{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .mesg h1{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.hero .mesg h3{
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.hero .mesg .text-mesg{
+    position: relative;
+    width: 80%;
+    height: 312px;
+}
+.hero .img{
+    width: 100%;
+    height: 100vh; /* full device height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.hero .img img{
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+}
+
+.project{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0 1.5em;
+    margin-top: 7.4em;
+    display: grid;
+    margin-bottom: 7em;
+}
+.project .flex .designn{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    transition: all .3s;
+}
+.project .flex .designn :hover{
+    transition: all .3s;
+    background-color: rgba(231, 129, 107, 0.4);
+}
+.project .flex .web{
+    background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/shared/desktop/webDev.jpg');
+    z-index: 10;
+}
+.project .flex .app{
+    background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/shared/mobile/mobileApp.jpg');
+    z-index: 10;
+}
+.project .flex .seo{
+    background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/seo/seo.jpg');
+    z-index: 10;
+}
+.project .flex .design-text{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.project .flex .design-text h4{
+    font-weight: 400;
+    /* pointer-events: none; */
+    cursor: pointer;
+}
+
+.message{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0 1.5em;
+}
+.message .mesg-bdy{
+    position: relative;
+    width: 100%;
+    height: 432px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+}
+.mesg-bdy .illustration{
+    position: relative;
+    width: 202px;
+    height: 202px;
+    /* margin-bottom: 2.4em; */
+}
+.mesg-bdy .illustration::before{
+    position: absolute;
+    content: '';
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+}
+.mesg-bdy .one::before{
+    background: linear-gradient(90deg, rgba(93, 2, 2, 0.117569) 0%, rgba(93, 2, 2, 0.0001) 100%);
+}
+.mesg-bdy .two::before{
+    background: linear-gradient(180deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.117569) 100%);
+}
+.mesg-bdy .three::before{
+    background: linear-gradient(180deg, rgba(93, 2, 2, 0.117569) 0%, rgba(93, 2, 2, 0.0001) 100%);
+}
+.mesg-bdy .illustration img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.mesg-bdy .text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #333136;
+}
+.mesg-bdy .text h3{
+    margin-block: 32px;
+}
+@media screen and (min-width: 48em) {
+    main{
+        padding: 0 1.5em;
+        margin-top: 100px;
+    }
+    .hero{
+        background-position: 100% 45%;
+        border-radius: 15px;
+    }
+    .hero .mesg{
+        width: 100%;
+        height: 100%;
+    }
+    .hero .mesg .text-mesg{
+        width: 533px;
+
+    }
+   
+    .hero .img{
+        width: 80%;
+        height: 100vh; /* full device height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .project .flex .designn{
+        height: 200px;
+        background-color: #E7816B;
+    }
+    .project .flex .web{
+        background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/shared/desktop/webDev.jpg');
+    z-index: 10;
+    }
+    .project .flex .app{
+        background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/shared/mobile/mobileApp.jpg');
+        z-index: 10;
+    }
+    .project .flex .seo{
+        background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/seo/seo.jpg');
+        z-index: 10;
+    }
+  
+    .message .mesg-bdy{
+        margin-bottom: 2.4em;
+        flex-direction: row;
+        align-items: center;
+        height: 202px;
+        gap: 0;
+        justify-content: space-between;
+    }
+    .mesg-bdy .illustration{
+        margin: 0;
+    }
+    .mesg-bdy .text {
+        width: 460px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+    .mesg-bdy .text h3{
+        margin-bottom: 16px;
+    }
+}
+@media screen and (min-width: 51.2em) {
+    main{
+        padding: 0;  
+    }
+    .project{
+        padding: 0;
+    }
+    .message{
+        padding: 0;
+    }
+}  
+@media screen and (min-width: 75em) {
+    .hero{
+        height: 643px;
+        flex-direction: row;
+    }
+    .hero .img img{
+        width: 100%;
+        height: 100vh; /* full device height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        top: unset;
+        bottom: -70px;
+    }
+
+    .hero .mesg{
+        /* justify-content: flex-end; */
+        padding-left: 5.5em;
+    }
+    .hero .mesg .text-mesg{
+        text-align: left;
+    }
+    .project{
+        width: 100%;
+        height: 640px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+    }
+    .project .flex {
+        height: 100%;
+    }
+    .project .flex .designn{
+        margin-bottom: 0;
+    }
+    .project .flex1 .designn{
+        height: 100%;
+    }
+    .project .flex2 a{
+        /* display: unset; */
+        height: 100%;
+    }
+    .project .flex2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    .project .flex2 .designn{
+        height: 100%;
+    }
+    .project .flex .web{
+        background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/shared/desktop/webDev.jpg');
+    z-index: 10;
+    }
+    .project .flex .app{
+        background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/shared/mobile/mobileApp.jpg');
+        z-index: 10;
+        
+    }
+    .project .flex .seo{
+        background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/seo/seo.jpg');
+        z-index: 10;
+    }
+    .message{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .message .mesg-bdy{
+        flex-direction: column;
+        height: 412px;
+        width: 350px;
+    }
+    .mesg-bdy .text{
+        width: 100%;
+        text-align: center;
+    }
+    .mesg-bdy .text h3{
+        margin-block: 32px;
+    }
+}

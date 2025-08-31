@@ -1,0 +1,269 @@
+footer{
+    position: relative;
+    width: 100%;
+    padding: 0 1.5em;
+    background-color: #222124;
+    height: 815px;
+    padding-top: 253px;
+    margin-top: 300px;
+    bottom: 0;
+}
+.talk{
+    position: absolute;
+    background-color: #E7816B;
+    border-radius: 15px;
+    top: -80%;
+    height: 379px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('../../assets/shared/desktop/bg-pattern-call-to-action.svg');
+    background-repeat: no-repeat;
+    background-position: 30%;
+}
+
+.talk .talk-text{
+    position: relative;
+    text-align: center;
+    margin-inline: auto;
+    align-items: center;
+    width: 270px;
+    font-weight: 300;
+    color: #fdf3f0;
+}
+.talk .talk-text h1{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+footer .footer-link{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.list{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: auto;
+    height: 228px;
+}
+.list nav{
+    position: relative;
+    width: 100%;
+}
+.list .logo{
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.list .logo img{
+    width: 60px;
+    height: 60px;
+}
+.list nav ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    height: 127px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.list nav ul li a{
+    font-size: 1.1em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, .9);
+    text-transform: uppercase;
+}
+.details{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.details .detail{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.detail .detail-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detail .detail-item p{
+    font-size: .9em;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.4);
+}
+.detail .detail-item .opac{
+    color: rgba(255, 255, 255, 0.5);
+}
+.detail .detail-item .bold{
+    font-weight: 700;
+}
+.details .social{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 20%;
+}
+.social ul{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: auto;
+}
+@media screen and (max-width: 48em) {
+    .list nav::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        top: -40px;
+        background-color: rgba(253, 243, 240, 0.3);
+    }
+}
+@media (min-width: 48em) {
+    footer{
+        height: 423px;
+        padding-top: 166px;
+    }
+    .talk{
+        top: -250%;
+        height: 350px;
+        padding: 57px;
+        background-position: -40% 50%;
+    }
+    .talk .talk-text{
+        width: 448px;
+        height: 148px;
+    }
+    .talk .talk-text h1{
+        margin-inline: auto;
+        width: 245px;
+        word-spacing: 4px;
+    }
+    footer .footer-link{
+        height: 166px;
+    }
+    .list{
+        flex-direction: row;
+        height: 27px;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    .list nav{
+        width: 370px;
+    }
+    .list::before{
+        position: absolute;
+        content: '';
+        top: unset;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        height: 1px;
+        bottom: -40px;
+    }
+    .list nav ul{
+        height: 14px;
+        flex-direction: row;
+        width: 370px;
+        justify-content: end;
+    }
+    .list nav ul li a{
+        font-size: 0.975em;
+    }
+    .details{
+        flex-direction: row;
+        width: 100%;
+        height: 78px;
+    }
+    .details .detail{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        height: 100%;
+        text-align: left;
+    }
+    .detail .detail-item{
+        align-items: flex-start;
+        width: 75%;
+    }
+    .details .social{
+        height: 100%;
+        width: 30%;
+        margin-left: 10px;
+    }
+    .social ul{
+        align-self: flex-end;
+        position: absolute;
+        right: 0;
+    }
+}
+@media screen and (min-width: 51.2em) {
+    footer{
+        padding:inherit 0;
+    }
+}
+@media screen and (min-width: 75em) {
+    .talk{
+        height: 292px;
+        top: -350px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 57px 80px;
+        background-position: 100% 50%;
+    }
+
+    .talk .talk-text{
+        width: 459px;
+        margin: 0;
+        text-align: left;
+        height: auto;
+    }
+    .talk .talk-text h1{
+        margin: 0;
+        width: 290px;
+        margin-bottom: 20px;
+
+    }
+    footer{
+        padding-top: 144px;
+        height: 393px;
+    }
+    .details .detail{
+        width: 50%;
+    }
+    .details .social{
+        width: 50%;
+    }
+.detail .detail-item p{
+    font-size: 1em;
+}
+}

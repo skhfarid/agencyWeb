@@ -1,0 +1,263 @@
+.design{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+}
+.design .intro{ 
+    width: 100%;
+    height: 320px;
+    background-color: #E7816B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    margin-bottom: 8em;
+}
+.design .intro h1{
+    font-weight: 500;
+}
+
+.web .intro{
+    background-image: url('../../assets/web-design/desktop/bg-pattern-intro-web.svg');
+}
+.app .intro{
+    background-image: url('../../assets/app-design/desktop/bg-pattern-intro-app.svg');
+}
+.seo .intro{
+    background-image: url('../../assets/seo/desktop/bg-pattern-intro-graphic.svg');
+}
+.intro .text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 327px;
+    height: 110px;
+    text-align: center;
+    color: #fff;
+    justify-content: space-between;
+}
+.intro .text p{
+    line-height: 20px;
+}
+/* 
+######################################################
+######################################################
+ */
+ .design .content{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-top: 97px;
+    padding: 0 1.5em;
+    margin-bottom: 8em;
+ }
+ .content .card{
+    position: relative;
+    width: 100%;
+    height: 478px;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    border-radius: 15px;
+ }
+  .card .img{
+    position: relative;
+    width: 100%;
+    height: 320px;
+  }
+  .card .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    height: 100%;
+  }
+  .card .card-text{
+    position: relative;
+    width: 100%;
+    background-color: #fdf3f0;
+    height: 158px;
+    padding: 32px;
+    text-align: center;
+  }
+  .card .card-text:hover, .card .card-text:hover h3, .card .card-text:hover p{
+    color: #fff;
+    background-color: #E7816B;
+    transition: .3s;
+  }
+  .card .card-text h3{
+    text-transform: uppercase;
+    color: #E7816B;
+    background-color: inherit;
+    margin-bottom: 18px;
+  }
+  .card .card-text p{
+    color: #333136;
+    background-color: inherit;
+  }
+  
+  
+ /* 
+ ############################################################
+ #######################################################
+  */
+.flexex{
+    position: relative;
+    width: 100%;
+    padding: 0 1.5em;
+    display: grid;
+}
+.flexex .flex .designs{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #E7816B;
+    border-radius: 15px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    transition: all .3s;
+}
+.flexex .flex .designs :hover{
+    background-color: rgba(231, 129, 107, 0.4);
+    transition: all .3s;
+}
+.flexex .flex .web{
+    background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/shared/desktop/webDev.jpg');
+    z-index: 10;
+}
+.flexex .flex .app{
+    background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/shared/mobile/mobileApp.jpg');
+    z-index: 10;
+}
+.flexex .flex .seo{
+    background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/seo/seo.jpg');
+    z-index: 10;
+}
+.flexex .flex .design-text{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.flexex .flex .design-text h4{
+    font-weight: 400;
+    /* pointer-events: none; */
+    cursor: pointer;
+}
+
+@media screen and (min-width: 48em) {
+    .design{
+        padding: 0 1.5em;
+        margin-top: 100px;
+    }
+    .design .content{
+        padding: 0;
+    }
+     .content .card{
+        display: grid;
+        height: 310px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card .img{
+        height: 100%;
+    }
+    .card .card-text {
+        height: 100%;
+        padding: 109px 41px 108px 32px;
+    }
+    .flexex{
+        padding: 0;
+    }
+    .flexex .flex .designs{
+        height: 200px;
+    }
+    .design .intro{
+        height: 252px;
+        border-radius: 15px;
+    }
+    .intro .text{ 
+        max-width: 391px;
+        height: 114px;
+    }
+    .intro .text p{
+        line-height: unset;
+    }
+    .flexex .flex .web{
+        background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/shared/desktop/webDev.jpg');
+        z-index: 10;
+    }
+    .flexex .flex .app{
+        background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/shared/mobile/mobileApp.jpg');
+        z-index: 10;
+    }
+    .flexex .flex .seo{
+        background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/seo/seo.jpg');
+        z-index: 10;
+    }
+}
+@media screen and (min-width: 51.2em) {
+    .design{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:75em) {
+    .design .content{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5em;
+    }
+    .content .card{
+        display: unset;
+        height: 478px;
+        margin-bottom: 0;
+    }
+    .card .img{
+        height: 320px;
+      }
+      .card .card-text{
+        padding: 32px;
+        width: 100%;
+        height: 158px;
+      }
+    .flexex{
+        width: 100%;
+        height: 320px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+    }
+    .flexex .flex {
+        height: 100%;
+    }
+    .flexex .flex .designs{
+        margin-bottom: 0;
+    }
+    .flexex .flex .designs{
+        height: 100%;
+    }
+    .flexex .flex .web{
+        background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/shared/desktop/webDev.jpg');
+        z-index: 10;
+    }
+    .flexex .flex .app{
+        background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/shared/mobile/mobileApp.jpg');
+        z-index: 10;
+    }
+    .flexex .flex .seo{
+        background-image: linear-gradient(rgba(73, 7, 7, 0.788), rgba(0, 0, 0, 0.5)), url('../../assets/seo/seo.jpg');
+        z-index: 10;
+    }
+}

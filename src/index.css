@@ -1,0 +1,137 @@
+*{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.app{
+    position: relative;
+    width: 100%;
+    font-family: 'Jost', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 48px;
+  }
+  
+  .title {
+    font-size: 2.5em;
+    line-height: 44px;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    line-height: 48px;
+    letter-spacing: 2px;
+  }
+  
+  h3 {
+    font-size: 1.25em;
+    line-height: 26px;
+    letter-spacing: 5px;
+  }
+  
+  h4 {
+    font-size: 0.9377em;
+    line-height: 22px;
+    letter-spacing: 5px;
+  }
+  
+a{
+    color: inherit;
+    text-decoration: none;
+}
+button{
+    border: none;
+    background-color: inherit;
+}
+.app .btn{
+  position: relative;
+  width: 152px;
+  height: 56px;
+  font-size: 0.9375em;
+  line-height: 22px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+ 
+}
+.app .btn a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .btn-light{
+  color: #1D1C1E;
+  background-color: #fff;
+  transition: .3s;
+}
+.app .btn-dark{
+  color: #fff;
+  background-color: #E7816B;
+}
+ .app .btn-light:hover{
+  color: #fff;
+  background-color: #FFAD9B;
+}
+.app .btn-dark:hover{
+  border: 2px solid #E7816B;
+  color: #1D1C1E;
+  background-color: #fff;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.app .container{
+    width: min(1110px, 100%);
+    margin-inline: auto;
+}
+/* section{
+  background-color: aqua;
+  
+} */
+@media screen and (max-width:48em) {
+    
+    h1 {
+        font-size: 2em;
+        line-height: 36px;
+      }
+      h2 {
+        font-size: 1.75em;
+        line-height: 36px;
+        letter-spacing: 1.399999976158142px;
+      }
+      .title {
+        font-size: 2em;
+        line-height: 36px;
+      }
+  }
+@media (max-width: 75em){
+    .app .container{
+        width: min(779px, 100%);
+    }
+    .title{
+      font-size: 2em;
+      line-height: 36px;
+    }
+}
+@media (min-width: 75em){
+  .app {
+      background-image: url('./assets/shared/desktop/bg-pattern-leaf.svg');
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: 0 20%;
+  }
+}
