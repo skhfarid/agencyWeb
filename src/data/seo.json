@@ -3,18 +3,18 @@
         "id": 1,
         "heading": "Gloria",
         "text": "Gloria Cleaning is a professional cleaning service located in the Bronx, New York, offering residential, commercial, and specialized cleaning services across NYC, New Jersey, and beyond.",
-        "imgUrl": "/public/assets/gloriaCleaning.jpg"
+        "imgUrl": "/assets/gloriaCleaning.jpg"
     },
     {
         "id": 2,
         "heading": "VPD Contracting",
         "text": "VPD Contracting is a seasoned home renovation and remodeling contractor based in Carmel/Stormville, NY. With over 12 years of industry experience, the website was designed to amplify their reputation, showcase their full-service offering",
-        "imgUrl": "/public/assets/VPD.jpg"
+        "imgUrl": "/assets/VPD.jpg"
     },
     {
         "id": 3,
         "heading": "Blueblood Thoroughbreds",
         "text": "Blueblood Thoroughbreds is a premium racehorse syndication and sales platform that connects enthusiasts with high-quality thoroughbred ownership opportunities.",
-        "imgUrl": "/public/assets/Blueblood.jpg"
+        "imgUrl": "/assets/Blueblood.jpg"
     }
 ]
