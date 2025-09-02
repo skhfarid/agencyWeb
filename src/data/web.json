@@ -3,36 +3,36 @@
         "id": 1,
         "heading": "Robert D Dental Clinic",
         "text": "Robert D Dental Clinic is a modern dental care provider offering general and cosmetic dentistry services",
-        "imgUrl": "/public/assets/3D Dentistry Robert D Nguyen DDS INC...jpg"
+        "imgUrl": "/assets/3D Dentistry Robert D Nguyen DDS INC...jpg"
     },
     {
         "id": 2,
         "heading": "LAv1",
         "text": "LAv1 is a Los Angeles–based digital marketing agency specializing in small-business SEO, PPC, AI-driven solutions, and web design.",
-        "imgUrl": "/public/assets/lav1.jpg"
+        "imgUrl": "/assets/lav1.jpg"
     },
     {
         "id": 3,
         "heading": "Easy Being Green",
         "text": "Easy Being Green is a modern, eco-conscious platform that provides sustainable energy solutions.",
-        "imgUrl": "/public/assets/EASY BEING GREEN (1).jpg"
+        "imgUrl": "/assets/EASY BEING GREEN (1).jpg"
     },
     {
         "id": 4,
         "heading": "Easy Job Bank",
         "text": "EasyJobBank is a user-centric online job portal designed to bridge job seekers and employers with an intuitive, feature-rich interface.",
-        "imgUrl": "/public/assets/EASY jOB bANK.jpg"
+        "imgUrl": "/assets/EASY jOB bANK.jpg"
     },
     {
         "id": 5,
         "heading": "Mr Blockage",
         "text": "The Plumber site is designed to offer a polished and professional online presence for a plumbing service.",
-        "imgUrl": "/public/assets/Mr Blockage.jpg"
+        "imgUrl": "/assets/Mr Blockage.jpg"
     },
     {
         "id": 6,
         "heading": "Sandy’s Social",
         "text": "Sandy’s Social is a boutique social media and digital marketing consultancy focused on helping small businesses build brand awareness and drive measurable growth",
-        "imgUrl": "/public/assets/Sandys Social.jpg"
+        "imgUrl": "/assets/Sandys Social.jpg"
     }
 ]
